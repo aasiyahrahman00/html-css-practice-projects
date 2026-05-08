@@ -1,0 +1,124 @@
+body {
+  background-color: #F9CBD6;
+  font-family: 'Quicksand', sans-serif;
+  padding: 2rem;
+  margin: 0;
+  color: #27284D;
+}
+
+.container {
+  background-color: #F2E0D2;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #9E182B;
+  font-family: 'Comfortaa', cursive;
+  font-size: 2em;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-family: 'Comfortaa', cursive;
+  color: #9E182B;
+}
+
+legend {
+  font-family: 'Comfortaa', cursive;
+  color: #9E182B;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  border: 2px solid #F2AFBC;
+  border-radius: 10px;
+  background-color: white;
+  font-family: 'Quicksand', sans-serif;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #9E182B;
+  outline: none;
+}
+
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+  border-color: red;
+}
+
+input:user-valid,
+select:user-valid,
+textarea:user-valid {
+  border-color: green;
+}
+
+input:first-of-type {
+  border: 2px dashed #F2AFBC;
+}
+
+input[type="radio"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.radio-group {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px solid #F2AFBC;
+  border-radius: 10px;
+  background-color: #F2E0D2;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.radio-group input[type="radio"]:checked {
+  border-color: #9E182B;
+  background-color: #F2AFBC;
+  box-shadow: 0 0 5px #9E182B;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: #F2AFBC;
+  font-weight: bold;
+}
+
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #9E182B;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+form button[type="submit"] {
+  display: block;
+  margin: 1.5rem auto 0 auto;
+}
+
+button:hover {
+  background-color: #F2AFBC;
+  color: #9E182B;
+}

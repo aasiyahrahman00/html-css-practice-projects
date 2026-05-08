@@ -1,0 +1,141 @@
+ *,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f5d7e3;
+  color: #4b3b4e;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  color: #5e4a5c;
+  margin: 1rem;
+}
+
+h1, h2 {
+  padding: 0.6rem;
+}
+
+h2 {
+  margin-top: 1rem;
+}
+
+.magazine-cover {
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  gap: 10px;
+  grid-template-areas: 
+  "title title title"
+  "feature-article feature-article cover-image"
+  "small-article1 small-article2 cover-image";
+  background-color: #fcf5d8;
+  padding: 2rem;
+  max-width: 1000px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  margin: 2rem auto;
+}
+
+.title,
+.feature-article,
+.small-article1,
+.small-article2,
+.cover-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.2rem;
+  border-radius: 12px;
+  background-color:#fce9ef;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.title:hover,
+.feature-article:hover,
+.small-article1:hover,
+.small-article2:hover,
+.cover-image:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.title {
+  grid-area: title;
+  background-color:#d7b4cd;
+}
+
+.feature-article {
+  grid-area: feature-article;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+}
+
+.cover-image {
+  grid-area: cover-image;
+  background-color:#dae7f1;
+  padding: 1rem;
+}
+
+.nail-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .magazine-cover {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "title"
+    "feature-article"
+    "cover-image"
+    "small-article1"
+    "small-article2";
+    padding: 1rem;
+  }
+
+  .title, 
+  .feature-article,
+  .small-article1,
+  .small-article2,
+  .cover-image {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 1rem
+  }
+
+  .nail-img {
+    width: 100%;
+    height: auto;
+  }
+}

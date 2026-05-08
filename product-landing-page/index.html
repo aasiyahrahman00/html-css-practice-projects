@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Nunito:wght@400;600&family=Poppins:wght@500;700&family=Raleway:wght@500;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Product Landing Page</title>
+</head>
+
+<body>
+  <header id="header">
+    <nav id="nav-bar" aria-label="Main Navigation">
+      <img src="https://i.imgur.com/mlfha3X.png" id="header-img" alt="Pie icon">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#feature-list">Ingredients for Pie-Fect Success</a></li>
+        <li><a class="nav-link" href="#video-section">A Taste of What’s to Crumb</a></li>
+        <li><a class="nav-link" href="#pricing-cards">Your Perfect Pie Plan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="window-pie" src="https://i.imgur.com/vzziH21.png" alt=" " >
+      <h1>A Wonderfully Whisked Pie-Making Masterclass</h1>
+      <p class="hero-text">From humble crusts to flaky showstoppers — your pie legend begins here. <br> Reserve your oven-side seat: Pop in your email and join our delightfully doughy journey!
+      </p>
+
+      <form id="form" action="https://www.freecodecamp.org/email-submit">
+        <label for="email" class="sr-only">Email Address</label>
+        <input id="email" type="email" name="email" placeholder="Drop your email & we’ll save you a slice...">
+        <input id="submit" type="submit" value="LET'S BAKE!">
+      </form>
+    </section>
+
+
+    <section id="feature-list">
+      <div class="feature-item">
+        <span class="icon">
+        <img src="https://i.imgur.com/42o1DLp.png" alt="whisk spatual jug icon surrounded by leaves and an apple">
+      </span>
+        <div class="heading-text">
+          <h2 class="heading-2">Only the Juiciest, Flakiest, Most Fabulous Ingredients</h2>
+          <span class="text">We don’t mess around with mediocrity — only locally-sourced fruits, sun-kissed spices, and butter that whispers “I love you.” Your pies deserve the royal treatment.</span>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <span class="icon">
+        <img src="https://i.imgur.com/vtVI4mU.png" alt="hand holding ipad with pie and play button on screen">
+      </span>
+        <div class="heading-text">
+          <h2 class="heading-2">Lessons as Easy as Pie (Because They Are!)</h2>
+          <span class="text">Delivered piping-hot to your inbox, our expert video tutorials let you bake at your leisure. Lifetime access included, along with printable, splatter-friendly recipe cards.</span>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <span class="icon">
+        <img src="https://i.imgur.com/OaIkL0u.png" alt="pie on green dish with slice lifed">
+      </span>
+        <div class="heading-text">
+          <h2 class="heading-2">Pie-Fect Results, Guaranteed</h2>
+          <span class="text">Flop-proof fillings. Blissfully buttery crusts. Every recipe has been kitchen-tested (and taste-tested… a lot) to ensure your pies are crowd-pleasers, not disasters.</span>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="video-section">
+      <div class="video-wrapper">
+        <iframe id="video" src="https://www.youtube.com/embed/yt0N2rFnG0k" title="All My Best Pie Baking Tips"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <div class="video-description">
+          <h2>Bake Alongside The Masters!</h2>
+          <p>Get ready to roll up your sleeves and dive into a buttery, flaky adventure! Our master pie bakers will
+            sprinkle their best-kept secrets, tips, and tricks straight into your kitchen — all while you bake alongside
+            them. From crust-perfecting magic to filling finesse, these pro tips will have your pies stealing the show
+            every
+            single time.</p>
+          <p>So sign up, grab your rolling pin, and let’s make some pie history together!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <section id="pricing-cards">
+    <h2>Choose Your Flavor of Support</h2>
+
+    <div class="card-container">
+      <div class="card one">
+        <img src="https://i.imgur.com/X38UOqn.png" alt="pecan pie" class="pie pecan">
+        <h3>THE PERFECT CLASSICAL WHISKER <br> £49</h3>
+        <p>Great for confident beginners who bake best in pajamas</p>
+        <ul>
+          <li>Perfect for solo bakers who just need a gentle nudge</li>
+          <li>Access to our essential pie-making video series</li>
+          <li>Light-touch guidance with printable recipes</li>
+        </ul>
+        <button type="button">STIR ME IN</button>
+      </div>
+
+      <div class="card two">
+        <img src="https://i.imgur.com/FU7pHGT.png" alt="pie with whipped cream topping" class="pie cream" >
+        <h3>THE CRUMBLE COMPANION <br> £79</h3>
+        <p>Like baking with a enthusiastic chef by your side</p>
+        <ul>
+          <li>Everything included in Classical Whisker</li>
+          <li>Regualr check-ins from our team of 
+          <li>3 live classes — bake along with real-time magic</li>
+        </ul>
+        <button type="button">SIGN ME UP</button>
+      </div>
+
+      <div class="card three">
+        <img src="https://i.imgur.com/A5MHePD.png" alt="pie with lattice top" class="pie lattice">
+        <h3>THE FULL-ON PIE-A-PALOOZA <br> £99</h3>
+        <p>Basically a cozy pie-making retreat — minus the airfare</p>
+        <ul>
+          <li>Hands-on, lovingly gooey experience</li>
+          <li>Q&A sessions with our master pie whisperers</li>
+          <li>Extended access and pie pep talks on demand</li>
+        </ul>
+        <button type="button">LET’S ROLL!</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Privacy | Terms | Contact</p>
+    <p>Copyright 2025, The Perfect Pie™</p>
+  </footer>
+
+
+</body>
+
+</html>

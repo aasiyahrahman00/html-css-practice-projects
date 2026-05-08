@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  padding: 40px;
+  word-break: break-word;
+}
+
+.email-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+}
+
+#email {
+  width: 500px;
+  padding: 50px;
+  margin-top: 50px;
+  background-color: #ffffff;
+  border: 2px solid #eeeeee;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.email-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 150px;
+  margin-right: 12px;
+}
+
+.sender-info {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.email-meta {
+  font-size: 14px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.re {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.email-body {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.email-body ul,
+.email-body ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+#confidential,
+#top-secret {
+  display: inline-block; /* ✅ Required by tests */
+  padding: 8px 12px;
+  margin-left: 10px;
+  border: 5px solid rgba(255, 0, 0, 0.85);
+  font-weight: bold;
+  color: rgba(255, 0, 0, 0.85);
+  font-size: 25px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  position: absolute;
+  z-index: 10;
+}
+
+#confidential {
+  transform: rotate(-20deg);
+}
+
+#top-secret {
+  transform: rotate(20deg);
+  bottom:40px;
+}
+
+
+.blurred {
+  filter: blur(3px);
+}
+
+.memorandum {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.end {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}

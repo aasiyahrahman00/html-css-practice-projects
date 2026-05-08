@@ -1,0 +1,71 @@
+body {
+  background-color: #f4f4f4;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+
+}
+
+.todo-list {
+  list-style-type: none;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(253, 199, 255, 0.6); 
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+
+h1 {
+  font-family: 'Baloo 2';
+  text-align: center;
+  font-size: 32px;
+  color: #b0b0b0;
+  margin-bottom: 0px
+}
+
+.emoji {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom:30px
+}
+
+.todo-list > li {
+  background-color: #fff0fb;
+  border-radius: 15px;
+  padding: 17px;
+  margin-bottom: 21px;
+  box-shadow: 0 0 20px rgba(253, 199, 255, 0.6); 
+}
+
+.todo-list > li:last-child {
+  margin-bottom: 0;
+}
+
+.sub-item {
+  margin-left: 37px;
+  padding: 8px;
+}
+
+.sub-item-link {
+  text-decoration: none;
+}
+
+.sub-item-link:hover {
+  color:#c7f3ff;
+}
+
+.sub-item-link:active {
+  color:#ffdcf5;
+}
+
+.sub-item-link:focus {
+  color:#f2f4c3;
+  outline: 1px solid;
+}
+
+.sub-item-link:visited {
+  color:#fdc7ff;
+}
