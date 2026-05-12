@@ -312,9 +312,16 @@ body, html {
 }
 
 .overlay-img {
+  width: min(55%, 250px);
   max-width: 250px;
   height: auto;
   opacity: 0.9;
+  margin-bottom: 0;
+}
+
+.project-tile .overlay-img[src="images/overlay-img-thirteen.png"] {
+  width: min(35%, 150px);
+  max-width: 150px;
 }
 
 .project-tile:hover .overlay,
@@ -568,110 +575,184 @@ body, html {
 @media (max-width: 600px) {
   html { font-size: 50%; }
 
-  /* Navbar */
   #navbar {
-    padding: 2rem 1.5rem;
+    padding: 1.4rem 1rem;
+    border-bottom-width: 8px;
+    border-top-width: 8px;
   }
+
   .nav-list {
-    flex-direction: column;
-    gap: 2rem;
-    font-size: 1.8rem;
+    gap: 1rem;
+    font-size: 1.4rem;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  /* Welcome Section */
-  .welcome-text {
-    font-size: 3rem;
-    top: 20rem;
-    margin-left: 2rem;
-  }
-  .typing-text-container {
-    margin-top: 5rem;
-  }
-  .hero-img {
-    margin: 2rem 0 0 0;
-    max-width: 100%;
-  }
+  .nav-link,
   .see-my-work-button {
-    top: 35rem;
-    left: 2rem;
-    font-size: 2.5rem;
-  }
-  .laying-button-bear-img {
-    top: 30rem;
-    left: 5rem;
-    max-width: 60px;
+    padding: 0.6rem 1rem;
+    border-width: 4px;
   }
 
-  /* Projects Section */
-  .project-banner {
-    font-size: 2.5rem;
-    padding: 3rem;
+  #welcome-section {
+    padding-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+
+  .welcome-text {
+    position: static;
+    display: contents;
+    text-align: center;
+    font-size: 2.6rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .welcome-text h1 {
+    order: 1;
+    padding: 0 2rem;
+    margin: 2rem auto 1rem auto;
+  }
+
+  .typing-text-container {
+    order: 3;
+    margin: 1.5rem auto 2rem auto;
+    max-width: 90vw;
+  }
+
+  .typing-text-1,
   .typing-text-2 {
-    font-size: 2rem;
-  }
-  .project-tile-container {
-    column-count: 1;
-    padding: 2rem;
-    margin: 2rem;
-  }
-  .project-tile {
-    padding: 1.5rem;
-    border-width: 0.8rem;
-    border-radius: 2rem;
-  }
-  .project-links {
-    font-size: 1rem;
-    padding: 0.5rem 0.8rem;
-  }
-  .hidden-bear-container {
-    width: 100%;
-    min-height: 120px;
-  }
-  .hidden-bear-face {
-    width: 200px;
-    left: 3rem;
-  }
-  .hidden-bear-paws {
-    width: 150px;
-    left: 3rem;
-    top: 0;
+    white-space: normal;
+    border-right: none;
+    animation: none;
+    width: auto;
   }
 
-  /* Contact Section */
-  .contact-banner {
-    font-size: 2.5rem;
-    padding: 3rem;
-    line-height: 6rem;
+  .hero-container {
+    order: 2;
+    width: 100%;
   }
-  .contact-banner > p {
+
+  .hero-img {
+    margin: 1rem auto 0 auto;
+    max-width: 95%;
+  }
+
+  .see-my-work-button {
+    order: 5;
+    position: relative;
+    font-size: 2rem;
+    margin: 1rem auto 2rem auto;
+    display: inline-block;
+    z-index: 2;
+  }
+
+  .laying-button-bear-img {
+    order: 4;
+    position: relative;
+    max-width: 70px;
+    margin: 0 auto -1.2rem auto;
+    z-index: 3;
+  }
+
+  #project-section {
+    margin-top: 4rem;
+  }
+
+  .project-banner {
+    font-size: 2.2rem;
+    padding: 3rem 1.5rem;
+  }
+
+  .typing-text-2 {
     font-size: 1.8rem;
     letter-spacing: 0.2rem;
   }
+
+  .project-tile-container {
+    column-count: 1;
+    padding: 2rem 1.5rem;
+    margin: 2rem auto 0 auto;
+    max-width: 95vw;
+  }
+
+  .project-tile {
+    padding: 1.3rem;
+    border-width: 0.7rem;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .project-links {
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .overlay-img {
+    width: min(45%, 160px);
+  }
+
+  .project-tile .overlay-img[src="images/overlay-img-thirteen.png"] {
+    width: min(28%, 95px);
+  }
+
+
+
+
+
+  .contact-banner {
+    font-size: 2.5rem;
+    padding: 3rem 1rem;
+    line-height: 5rem;
+  }
+
+  .contact-banner > p {
+    font-size: 1.7rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .book-bear-banner-img {
+    display: none;
+  }
+
   .contact-img-and-links {
     gap: 2rem;
     flex-direction: column;
+    padding: 3rem 1.5rem;
   }
+
   .mail-bear {
-    width: 80%;
+    width: min(85vw, 330px);
   }
+
   .mail-bear-heart {
     width: 5rem;
-    top: 55%;
-    left: 40%;
+    top: 58%;
+    left: 44%;
   }
-  .contact-left, .contact-right {
-    width: 90%;
-    gap: 2rem;
+
+  .contact-left,
+  .contact-right {
+    width: 95%;
+    gap: 1.5rem;
+    text-align: center;
   }
-  .contact-left > a, .contact-right > a {
-    font-size: 2rem;
+
+  .contact-left > a,
+  .contact-right > a {
+    justify-content: center;
+    font-size: 1.8rem;
+    gap: 1.5rem;
     padding: 1rem;
-    border-width: 6px;
+    border-width: 5px;
   }
+
   .contact-icon {
-    width: 50px;
-    height: 60px;
+    width: 45px;
+    height: auto;
   }
 }
 
@@ -684,22 +765,71 @@ body, html {
     font-size: 2rem;
   }
 
+  #welcome-section {
+    padding-top: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   .welcome-text {
+    position: static;
+    display: contents;
+    text-align: center;
     font-size: 4rem;
-    top: 25rem;
-    margin-left: 3rem;
+    margin: 0;
+    padding: 0;
   }
+
+  .welcome-text h1 {
+    order: 1;
+    padding: 0 2rem;
+    margin: 2rem auto 1rem auto;
+  }
+
   .typing-text-container {
-    margin-top: 7rem;
+    order: 3;
+    margin: 2rem auto;
+    max-width: 90vw;
   }
+
+  .typing-text-1,
+  .typing-text-2 {
+    white-space: normal;
+    border-right: none;
+    animation: none;
+    width: auto;
+  }
+
+  .hero-container {
+    order: 2;
+    width: 100%;
+  }
+
   .hero-img {
     margin: 2rem auto 0 auto;
     max-width: 90%;
   }
   .see-my-work-button {
-    top: 45rem;
-    left: 3rem;
-    font-size: 3rem;
+    order: 5;
+    position: relative;
+    top: auto;
+    left: auto;
+    font-size: 2.6rem;
+    margin: 1rem auto 3rem auto;
+    display: inline-block;
+    z-index: 2;
+  }
+
+  .laying-button-bear-img {
+    order: 4;
+    position: relative;
+    top: auto;
+    left: auto;
+    max-width: 85px;
+    margin: 0 auto -2.2rem auto;
+    z-index: 3;
   }
 
   .project-banner {
@@ -712,14 +842,67 @@ body, html {
   .project-tile-container {
     column-count: 2;
     column-gap: 2rem;
-    padding: 3rem;
+    padding: 3rem 2rem;
     margin: 2rem auto;
+    max-width: 95vw;
   }
   .project-tile {
     padding: 2rem;
     border-width: 1rem;
     border-radius: 2.5rem;
   }
+
+  .overlay-img {
+    width: min(50%, 190px);
+  }
+
+  .project-tile .overlay-img[src="images/overlay-img-thirteen.png"] {
+    width: min(32%, 120px);
+  }
+
+  .hidden-bear-container {
+    display: none;
+  }
+
+  .contact-img-and-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 4rem 1.5rem 5rem 1.5rem;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 210px;
+    gap: 2rem;
+    flex-shrink: 1;
+  }
+
+  .contact-left > a,
+  .contact-right > a {
+    justify-content: center;
+    font-size: 1.8rem;
+    gap: 1.2rem;
+    padding: 1rem;
+    border-width: 6px;
+  }
+
+  .contact-icon {
+    width: 45px;
+    height: auto;
+  }
+
+  .mail-bear {
+    width: clamp(210px, 28vw, 300px);
+    flex-shrink: 0;
+  }
+
+  .mail-bear-heart {
+    width: clamp(4rem, 6vw, 6rem);
+    top: 56%;
+    left: 41%;
+  }
 }
-
-
