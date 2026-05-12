@@ -37,35 +37,35 @@ body {
 }
 
 .card-1{
-  background-image: url(https://i.imgur.com/s05V0Oe.png);
+  background-image: url(images/card-one.png);
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .card-2 {
-  background-image: url(https://i.imgur.com/JGSjAVf.png);
+  background-image: url(images/card-two.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .card-3 {
-  background-image: url(https://i.imgur.com/3BWlmwl.png);
+  background-image: url(images/card-three.png);
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .card-4 {
-  background-image: url(https://i.imgur.com/ZBblaJ8.png);
+  background-image: url(images/card-four.png);
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .card-5 {
-  background-image: url(https://i.imgur.com/w59JazX.png);
+  background-image: url(images/card-five.png);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
