@@ -367,7 +367,7 @@ footer {
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
 
-  background-image: url('https://i.imgur.com/i27dWid.png');
+  background-image: url("images/footer-image.png");
   background-repeat: repeat;
   background-position: center bottom;
   background-size: contain;
